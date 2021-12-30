@@ -176,6 +176,6 @@ imshape.append(3)
 
 vasculature = np.zeros(imshape)
 
-vasculature[np.where(arteries)]=[20, 1, 170]
-vasculature[np.where(veins)]=[255, 150, 0]
+vasculature[np.where(arteries.img)]=[20, 1, 170]
+vasculature[np.where(veins.img)]=[255, 150, 0]
 cv.imwrite('vasculature.jpg', vasculature)
